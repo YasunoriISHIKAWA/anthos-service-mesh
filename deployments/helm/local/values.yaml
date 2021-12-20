@@ -1,0 +1,13 @@
+app:
+  image:
+    repository: golang
+    tag: 1.16.3-buster
+  ports:
+    grpc:
+      port: 8080
+      targetPort: 8080
+      nodePort: 30090
+      protocol: TCP
+  env:
+    GOPATH: /app/.go
+    ENV: local

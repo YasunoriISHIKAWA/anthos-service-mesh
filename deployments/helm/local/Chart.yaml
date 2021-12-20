@@ -1,0 +1,12 @@
+apiVersion: v1
+appVersion: "0.1.0"
+version: 0.1.0
+name: anthos-service-mesh
+description: Local Development Environment.
+keywords:
+  - kubernetes
+  - local
+  - go
+  - golang
+sources:
+  - https://github.com/YasunoriISHIKAWA/anthos-service-mesh

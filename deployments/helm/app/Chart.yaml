@@ -1,0 +1,12 @@
+apiVersion: v1
+appVersion: "0.1.0"
+version: 0.1.0
+name: app
+description: Advent Calendar 2021
+keywords:
+  - kubernetes
+  - go
+  - golang
+  - Anthos Service Mesh
+sources:
+  - https://github.com/YasunoriISHIKAWA/anthos-service-mesh

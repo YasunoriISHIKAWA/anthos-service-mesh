@@ -1,0 +1,44 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-service
+  labels:
+    app: app
+  namespace: {{ .Values.namespace.name }}
+spec:
+  type: NodePort
+  ports:
+    {{- range $key, $value := .Values.app.ports }}
+    - name: {{ $key }}
+      port: {{ $value.port }}
+      targetPort: {{ $value.targetPort }}
+      protocol: {{ $value.protocol }}
+  {{- end }}
+  selector:
+    app: app
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+  namespace: {{ .Values.namespace.name }}
+spec:
+  selector:
+    matchLabels:
+      app: app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+        - name: app
+          image: "{{ .Values.app.image.repository }}:{{ .Values.app.image.tag }}"
+          workingDir: /app
+          command:
+            - ./echo-server
+          env:
+            - name: ENV
+              value: {{ .Values.namespace.name }}

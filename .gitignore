@@ -1,0 +1,23 @@
+# Mac
+.DS_Store
+
+# editor
+.idea
+
+# go
+.go
+
+# build
+.toolchain
+
+# helm
+local-values.yaml
+
+# asm
+dns-spec.yaml
+edge2mesh-credential.yaml
+managed-cert.yaml
+
+# cert
+*.crt
+*.key

@@ -1,0 +1,14 @@
+namespace:
+  name: develop
+  labels:
+    istio.io/rev: asm-1115-3
+
+app:
+  image:
+    repository: yasunoriishikawa/asm-advent2021
+    tag: 0.0.1
+  ports:
+    grpc:
+      port: 8080
+      targetPort: 50051
+      protocol: TCP

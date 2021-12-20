@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package echo;
+
+option go_package = "github.com/YasunoriISHIKAWA/anthos-service-mesh/pkg/pb";
+
+// EchoService EchoService
+service EchoService {
+  // Call インデックス
+  rpc Call (EchoCallRequest) returns (EchoCallResponse);
+}
+
+// EchoCallRequest EchoインデックスRequest
+message EchoCallRequest {
+}
+
+// EchoCallResponse EchoインデックスResponse
+message EchoCallResponse {
+  // メッセージ
+  string message = 1;
+}
