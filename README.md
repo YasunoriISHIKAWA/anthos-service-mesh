@@ -318,6 +318,14 @@ $ gcloud endpoints services delete asm-advent2021-frontend.endpoints.${PROJECT}.
   - [エッジからメッシュへ: GKE Ingress を介したサービス メッシュ アプリケーションの公開][architecture/exposing-service-mesh-apps-through-gke-ingress]
   - [オプション機能の有効化][service-mesh/v1.7/docs/enable-optional-features]
   - [GKE への Anthos Service Mesh のインストール][service-mesh/v1.7/docs/scripted-install/gke-asm-onboard-1-7]
+- Google Kubernetes Engine
+  - [Ingress 機能の構成][cloud.google.com/kubernetes-engine/docs/how-to/ingress-features]
+  - [外部 HTTP(S) 負荷分散での Ingress][cloud.google.com/kubernetes-engine/docs/concepts/ingress-xlb]
+  - [Google マネージド SSL 証明書の使用][cloud.google.com/kubernetes-engine/docs/how-to/managed-certs]
+- Network Endpoint Group
+  - [NEG とは何か][google-cloud-jp/neg]
+- Cloud Endpoints
+  - [ESPv2 を使用した GKE 用 Cloud Endpoints のスタートガイド ][cloud.google.com/endpoints/docs/openapi/get-started-kubernetes-engine-espv2]
 - Tools
   - [gRPCurl][github.com/fullstorydev/grpcurl]
 
@@ -328,6 +336,14 @@ $ gcloud endpoints services delete asm-advent2021-frontend.endpoints.${PROJECT}.
 [architecture/exposing-service-mesh-apps-through-gke-ingress]: https://cloud.google.com/architecture/exposing-service-mesh-apps-through-gke-ingress
 [service-mesh/v1.7/docs/enable-optional-features]: https://cloud.google.com/service-mesh/v1.7/docs/enable-optional-features
 [service-mesh/v1.7/docs/scripted-install/gke-asm-onboard-1-7]: https://cloud.google.com/service-mesh/v1.7/docs/scripted-install/gke-asm-onboard-1-7
+
+[cloud.google.com/kubernetes-engine/docs/how-to/ingress-features]: https://cloud.google.com/kubernetes-engine/docs/how-to/ingress-features
+[cloud.google.com/kubernetes-engine/docs/concepts/ingress-xlb]: https://cloud.google.com/kubernetes-engine/docs/concepts/ingress-xlb
+[cloud.google.com/kubernetes-engine/docs/how-to/managed-certs]: https://cloud.google.com/kubernetes-engine/docs/how-to/managed-certs
+
+[google-cloud-jp/neg]: https://medium.com/google-cloud-jp/neg-%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%8B-cc1e2bbc979e
+
+[cloud.google.com/endpoints/docs/openapi/get-started-kubernetes-engine-espv2]: https://cloud.google.com/endpoints/docs/openapi/get-started-kubernetes-engine-espv2
 
 [github.com/fullstorydev/grpcurl]: https://github.com/fullstorydev/grpcurl
 [//]:#(RefUrlEnd)
